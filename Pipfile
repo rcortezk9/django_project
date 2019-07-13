@@ -9,6 +9,8 @@ verify_ssl = true
 django = "*"
 django-crispy-forms = "*"
 pillow = "*"
+boto3 = "*"
+django-storages = "*"
 
 [requires]
 python_version = "3.7"
