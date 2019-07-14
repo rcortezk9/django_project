@@ -2,7 +2,7 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper grey darken-1">
-          <a href="{% url 'blog-home' %}" class="brand-logo"><i class="large material-icons">cloud</i>DataScience Blog</a>
+          <a href="{% url 'blog-home' %}" class="brand-logo"><i class="large material-icons left">cloud</i>DataScience Blog</a>
           <ul class="right hide-on-med-and-down">
             <li><a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a></li>
             <li><a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a></li>
@@ -15,6 +15,8 @@
                 <li><a class="nav-item nav-link" href="{% url 'login' %}">Login</a></li>
                 <li><a class="nav-item nav-link" href="{% url 'register' %}">Register</a></li>
             {% endif %}
+            <li><a class="nav-item nav-link" href="https://github.com/rcortezk9"><i class="fab fa-github"></i></a></li>
+            <li><a class="nav-item nav-link" href="https://www.linkedin.com/in/rene-cortez/"><i class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
     </nav>

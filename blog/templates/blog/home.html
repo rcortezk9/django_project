@@ -2,18 +2,18 @@
 
 {% block content %}
     <!--Jumbotron-->
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <div class="jumbotron JumboHeaderImg">
+      <h1 class="display-4 white-text">Data Science!</h1>
+      <p class="lead white-text">A blog for Data Science projects.</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'blog-about' %}" role="button">About me</a>
+      <p class="white-text">Please share you Data Science projects.</p>
+      <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'blog-about' %}" role="button"><i class="material-icons right">free_breakfast</i>About me</a>
     </div>
     <!--Align Cards in a Column-->
     <div class="row">
     {% for post in posts %}
       <div class="col-md-4 mb-3">
-        <div class="card z-depth-5">
+        <div class="card z-depth-5 border border-dark">
           <div class="card-body">
             <img class="rounded-circle article-img z-depth-3" src="{{ post.author.profile.image.url }}">
             <div class="media-body">
@@ -23,7 +23,7 @@
                 </div>
                 <h5><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
                 <p class="card-text text-justify">{{ post.content|truncatewords:30 }}</p>
-                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3"><i class="material-icons right">input</i>View</a>
+                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3 border border-dark"><i class="material-icons right">input</i>View</a>
             </div>
           </div>
         </div>

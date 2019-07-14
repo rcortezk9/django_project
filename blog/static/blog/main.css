@@ -12,6 +12,12 @@ ul {
     margin: 0;
 }
 
+.JumboHeaderImg{
+    background-image: url("space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .bg-steel {
     background-color: #5f788a;
 }

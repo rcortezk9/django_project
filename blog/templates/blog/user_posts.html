@@ -16,7 +16,7 @@
                 </div>
                 <h5><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
                 <p class="card-text">{{ post.content|truncatewords:30 }}</p>
-                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3"><i class="material-icons right">input</i>View</a>
+                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3 border border-dark"><i class="material-icons right">input</i>View</a>
             </div>
           </div>
         </div>
