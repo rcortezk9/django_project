@@ -15,9 +15,9 @@
       <div class="col-md-4 mb-3">
         <div class="card z-depth-5 border border-dark">
           <div class="card-body">
-            <img class="rounded-circle article-img z-depth-3" src="{{ post.author.profile.image.url }}">
+            <img class="rounded-circle article-img z-depth-3 border border-dark" src="{{ post.author.profile.image.url }}">
             <div class="media-body">
-                <div class="article-metadata">
+                <div class="article-metadata mt-4">
                     <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
                     <small class="text-muted">{{ post.date_posted | date:"F d, Y" }}</small>
                 </div>
