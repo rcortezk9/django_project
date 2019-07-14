@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+    <!--Jumbotron-->
     <div class="jumbotron">
       <h1 class="display-4">Hello, world!</h1>
       <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -31,9 +32,8 @@
     </div>
     {% endif %}
     {% endfor %}
-    <!--The Pagination-->
+    <!--Pagination-->
     {% if is_paginated %}
-
         {% if page_obj.has_previous %}
             <a class="btn btn-outline-info mb-4 grey darken-1" href="?page=1">First</a>
             <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.previous_page_number }}">Previous</a>
@@ -51,6 +51,6 @@
             <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.next_page_number }}">Next</a>
             <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
         {% endif %}
-        <!--End Pagination-->
     {% endif %}
+
 {% endblock content %}

@@ -20,8 +20,11 @@
     {% endif %}
 
   </head>
+
   <body>
+
     {% include 'blog/navbar.html' %}
+
     <div class="container-fluid">
         {% if messages %}
             {% for message in messages %}
@@ -30,8 +33,15 @@
                 </div>
             {% endfor %}
         {% endif %}
-      {% block content %}{% endblock %}
+
+      {% block content %}
+
+      {% endblock %}
+
     </div>
+
     {% include 'blog/js.html' %}
+
   </body>
+
 </html>

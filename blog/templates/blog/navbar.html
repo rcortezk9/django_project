@@ -7,6 +7,7 @@
             <li><a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a></li>
             <li><a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a></li>
             {% if user.is_authenticated %}
+                <!--TODO: Add link to current user's Post -->
                 <li><a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a></li>
                 <li><a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a></li>
                 <li><a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a></li>

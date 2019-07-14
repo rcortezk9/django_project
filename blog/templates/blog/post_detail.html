@@ -10,8 +10,8 @@
           <small class="text-muted">{{ object.date_posted | date:"F d, Y" }}</small>
             {% if object.author == user %}
                 <div>
-                    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">Update</a>
-                    <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">Delete</a>
+                    <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'post-update' object.id %}">Update</a>
+                    <a class="waves-effect waves-light btn-small red darken-4" href="{% url 'post-delete' object.id %}">Delete</a>
                 </div>
             {% endif %}
         </div>

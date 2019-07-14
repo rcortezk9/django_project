@@ -16,7 +16,7 @@
                 </div>
                 <h5><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
                 <p class="card-text">{{ post.content|truncatewords:30 }}</p>
-                <a href="{% url 'post-detail' post.id %}" class="btn btn-primary">Go somewhere</a>
+                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3"><i class="material-icons right">input</i>View</a>
             </div>
           </div>
         </div>
@@ -25,26 +25,24 @@
     </div>
     {% endif %}
     {% endfor %}
-    <!--The Pagination-->
+    <!--Pagination-->
     {% if is_paginated %}
-
         {% if page_obj.has_previous %}
-            <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
-            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page=1">First</a>
+            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.previous_page_number }}">Previous</a>
         {% endif %}
 
         {% for num in page_obj.paginator.page_range %}
             {% if page_obj.number == num %}
-                <a class="btn mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn mb-4 grey darken-1" href="?page={{ num }}">{{ num }}</a>
             {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ num }}">{{ num }}</a>
             {% endif %}
         {% endfor %}
 
         {% if page_obj.has_next %}
-            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
-            <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.next_page_number }}">Next</a>
+            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
         {% endif %}
-        <!--End Pagination-->
     {% endif %}
 {% endblock content %}
