@@ -1,24 +1,22 @@
-<header class="site-header">
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper grey darken-1">
-          <a href="{% url 'blog-home' %}" class="brand-logo"><i class="large material-icons left">cloud</i>DataScience Blog</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a></li>
-            <li><a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'blog-home' %}">DataScience Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'blog-home' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'blog-about' %}">About</a></li>
             {% if user.is_authenticated %}
-                <!--TODO: Add link to current user's Post -->
-                <li><a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a></li>
-                <li><a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a></li>
-                <li><a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'post-create' %}">New Post</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
             {% else %}
-                <li><a class="nav-item nav-link" href="{% url 'login' %}">Login</a></li>
-                <li><a class="nav-item nav-link" href="{% url 'register' %}">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
             {% endif %}
-            <li><a class="nav-item nav-link" href="https://github.com/rcortezk9" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a class="nav-item nav-link" href="https://www.linkedin.com/in/rene-cortez/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-    </nav>
-</div>
-</header>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/rcortezk9" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/rene-cortez/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</nav>
