@@ -4,10 +4,6 @@
     <list default="true" id="9b9454a0-5498-4857-9323-fcfeff7a3db3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+            <state relative-caret-position="315">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="146" selection-start-line="8" selection-start-column="146" selection-end-line="8" selection-end-column="146" />
             </state>
           </provider>
         </entry>
@@ -101,9 +106,9 @@
         <option value="$PROJECT_DIR$/blog/static/blog/js.js" />
         <option value="$PROJECT_DIR$/blog/static/blog/main.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/js.html" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/home.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/navbar.html" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
       </list>
     </option>
   </component>
@@ -267,7 +272,7 @@
       <workItem from="1563240149876" duration="2616000" />
       <workItem from="1563243655109" duration="4318000" />
       <workItem from="1563248551963" duration="1225000" />
-      <workItem from="1563325684469" duration="4408000" />
+      <workItem from="1563325684469" duration="5033000" />
     </task>
     <task id="LOCAL-00001" summary="-Create Django project&#10;-Created Application&#10;-Added templates&#10;-Bootstrap&#10;-CSS">
       <created>1562538114304</created>
@@ -455,7 +460,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129012000" />
+    <option name="totallyTimeSpent" value="129637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +491,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319487" side_tool="true" weight="0.24559586" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946752" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" weight="0.4103627" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" visible="true" weight="0.40985325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -832,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -848,8 +846,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+        <state relative-caret-position="315">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="146" selection-start-line="8" selection-start-column="146" selection-end-line="8" selection-end-column="146" />
         </state>
       </provider>
     </entry>
