@@ -1,18 +1,20 @@
 {% extends 'blog/base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="container" style="margin-top: 40px">
+    <div class="container">
         <form method="POST">
             {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-botton mb-4">Join Today</legend>
+            <fieldset class="form-group col-md-6 mt-3 mb-0 mx-auto">
+                <div class="border-bottom mb-4">
+                    <legend class="mb-4">Join Today</legend>
+                </div>
                 {{ form|crispy }}
             </fieldset>
-            <div class="form-group">
-                <button class="btn-small waves-effect grey lighten-2 black-text z-depth-3 border border-dark" type="submit">Sign Up</button>
+            <div class="form-group col-md-6 mb-4 mt-2 mx-auto">
+                <button class="btn btn-primary btn-sm active" type="submit">Sign Up</button>
             </div>
         </form>
-        <div class="border-top pt-3">
+        <div class="col-md-6 mt-2 mb-0 pt-3 mx-auto">
             <small class="text-muted">
                 Already have an Account?<a class="ml-2" href="{% url 'login' %}">Sign In</a>
             </small>

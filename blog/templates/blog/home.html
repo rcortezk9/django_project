@@ -2,62 +2,68 @@
 
 {% block content %}
     <!--Jumbotron-->
-    <div class="jumbotron container-fluid bg-secondary">
-      <h1 class="display-4 white-text mr-3">Data Science!</h1>
-      <p class="lead white-text">Data has a better idea.</p>
+    <div class="jumbotron container-fluid p-3 mb-2 alert-primary text-dark border-secondary rounded-0">
+      <h1 class="display-4 mr-3">Data Science!</h1>
+      <p class="lead">Data has a better idea.</p>
       <hr class="my-4">
-      <p class="white-text">Without data you're just another person with an opinion.</p>
+      <p>Without data you're just another person with an opinion.</p>
         {% if user.is_authenticated %}
-            <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'post-create' %}" role="button">New Post</a>
+            <a href="{% url 'post-create' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">New Post</a>
         {% else %}
-            <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'login' %}" role="button">Login</a>
-            <a class="waves-effect waves-light btn-small grey darken-1" href="{% url 'register' %}" role="button">Register</a>
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a>
+            <a href="{% url 'register' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
         {% endif %}
     </div>
     <!--Align Cards in a Column-->
-    <div class="row">
-    {% for post in posts %}
-      <div class="col-md-4 mb-3">
-        <div class="card z-depth-5 border border-dark">
-          <div class="card-body">
-            <img class="rounded-circle article-img z-depth-3 border border-dark" src="{{ post.author.profile.image.url }}">
-            <div class="media-body">
-                <div class="article-metadata mt-4">
-                    <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-                    <small class="text-muted">{{ post.date_posted | date:"F d, Y" }}</small>
+    <div class="container">
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-md-4 mb-3">
+                <div class="card border-secondary">
+                    <div class="card-body mx-auto">
+                        <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
+                            <p class="card-text">{{ post.content|truncatewords:30 }}</p>
+                            <a href="{% url 'post-detail' post.id %}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">View</a>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+                            <small class="text-muted">{{ post.date_posted | date:"F d, Y" }}</small>
+                        </div>
+                    </div>
                 </div>
-                <h5><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
-                <p class="card-text text-justify">{{ post.content|truncatewords:30 }}</p>
-                <a href="{% url 'post-detail' post.id %}" class="btn-small waves-effect grey lighten-2 black-text z-depth-3 border border-dark"><i class="material-icons right">input</i>View</a>
             </div>
-          </div>
+            {% if forloop.counter|divisibleby:"6" or forloop.last %}
         </div>
-      </div>
-    {% if forloop.counter|divisibleby:"6" or forloop.last %}
-    </div>
-    {% endif %}
-    {% endfor %}
-    <div class="container-fluid">
-    <!--Pagination-->
-    {% if is_paginated %}
-        {% if page_obj.has_previous %}
-            <a class="btn btn-outline-info mb-4 grey darken-1 mr-2" href="?page=1">First</a>
-            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.previous_page_number }}">Previous</a>
-        {% endif %}
-
-        {% for num in page_obj.paginator.page_range %}
-            {% if page_obj.number == num %}
-                <a class="btn mb-4 grey darken-1" href="?page={{ num }}">{{ num }}</a>
-            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ num }}">{{ num }}</a>
             {% endif %}
-        {% endfor %}
+            {% endfor %}
+    </div>
+    <!--Pagination-->
+    <div class="container-fluid">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+            {% if is_paginated %}
+                {% if page_obj.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+                {% endif %}
 
-        {% if page_obj.has_next %}
-            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.next_page_number }}">Next</a>
-            <a class="btn btn-outline-info mb-4 grey darken-1" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-        {% endif %}
-    {% endif %}
+                {% for num in page_obj.paginator.page_range %}
+                    {% if page_obj.number == num %}
+                        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                        <li class="page-item"><a class="page-link" href="?page={{ num }}"> {{ num }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+                {% endif %}
+            {% endif %}
+            </ul>
+        </nav>
     </div>
 
 {% endblock content %}
