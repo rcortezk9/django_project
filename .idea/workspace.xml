@@ -53,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="315">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -294,7 +294,7 @@
       <workItem from="1563331815602" duration="467000" />
       <workItem from="1563410356813" duration="10562000" />
       <workItem from="1563487299077" duration="3196000" />
-      <workItem from="1563490640327" duration="9399000" />
+      <workItem from="1563490640327" duration="9820000" />
     </task>
     <task id="LOCAL-00001" summary="-Create Django project&#10;-Created Application&#10;-Added templates&#10;-Bootstrap&#10;-CSS">
       <created>1562538114304</created>
@@ -482,7 +482,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153826000" />
+    <option name="totallyTimeSpent" value="154247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,9 +495,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1787" height="1046" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12893982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12893982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -513,7 +512,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319487" side_tool="true" weight="0.24559586" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946752" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" weight="0.40985325" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" visible="true" weight="0.40985325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -884,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="315">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
