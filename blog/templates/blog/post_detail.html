@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="jumbotron container-fluid p-3 mb-2 alert-primary text-dark border-secondary rounded-0">
+    <div class="jumbotron container-fluid p-3 mb-2 alert text-white rounded-0" style="background-color: #5b80b2">
         <div class="media">
             <div class="media-body">
                 <h1 class="article-title">{{ object.title }}</h1>
@@ -12,19 +12,17 @@
                     </div>
                 {% endif %}
                 <hr class="my-4">
-                <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
-                <small class="text-muted">{{ object.date_posted | date:"F d, Y" }}</small>
+                <a class="mr-2 text-white" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
+                <small class="text-white">{{ object.date_posted | date:"F d, Y" }}</small>
             </div>
             <img class="rounded-circle ml-3" src="{{ object.author.profile.image.url }}">
         </div>
     </div>
 
-    <div class="container">
-        <article class="media content-section">
-            <div class="media-body">
-                <p class="article-content text-justify">{{ object.content|linebreaks }}</p>
-            </div>
-        </article>
+    <div class="container mt-2 mb-5">
+        <div class="row mx-md-n5">
+            <div class="p-3 border bg-light bg-white text-justify">{{ object.content|linebreaks }}</div>
+        </div>
     </div>
 
 {% endblock content %}

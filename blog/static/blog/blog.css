@@ -1,13 +1,12 @@
+
+body{
+    background-color: #f9f9f9;
+}
+
 a,p {
     font-family: 'Karla', sans-serif;
 }
 
-
 h1,h2,h3,h4,h5 {
     font-family: 'Josefin Sans', sans-serif;
-}
-
- .jumbotron h1 {
-
-    font-family: 'Roboto', sans-serif;
 }

@@ -2,7 +2,7 @@
 
 {% block content %}
     <!--Jumbotron-->
-    <div class="jumbotron container-fluid p-3 mb-2 alert alert-secondary text-dark rounded-0">
+    <div class="jumbotron container-fluid p-3 mb-2 alert text-white rounded-0" style="background-color: #5b80b2">
       <h1 class="display-4 mr-3">Data Science!</h1>
       <p class="lead">Data has a better idea.</p>
       <hr class="my-4">
@@ -19,7 +19,7 @@
         <div class="row">
             {% for post in posts %}
             <div class="col-md-4 mb-3">
-                <div class="card border-secondary">
+                <div class="card border-secondary shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body mx-auto">
                         <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" class="card-img-top">
                         <div class="card-body">
