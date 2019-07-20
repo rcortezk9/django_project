@@ -2,7 +2,7 @@
 
 {% block content %}
     <!--Jumbotron-->
-    <div class="jumbotron container-fluid p-3 mb-2 alert-primary text-dark border-secondary rounded-0">
+    <div class="jumbotron container-fluid p-3 mb-2 alert alert-secondary text-dark rounded-0">
       <h1 class="display-4 mr-3">Data Science!</h1>
       <p class="lead">Data has a better idea.</p>
       <hr class="my-4">
@@ -24,7 +24,7 @@
                         <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title"><a href="{% url 'post-detail' post.id %}">{{ post.title|truncatewords:5 }}</a></h5>
-                            <p class="card-text">{{ post.content|truncatewords:30 }}</p>
+                            <p class="card-text">{{ post.content|linebreaks|truncatewords:30 }}</p>
                             <a href="{% url 'post-detail' post.id %}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">View</a>
                         </div>
                         <div class="card-footer bg-white">
