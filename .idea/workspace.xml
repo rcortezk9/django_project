@@ -313,7 +313,7 @@
       <workItem from="1563331815602" duration="467000" />
       <workItem from="1563410356813" duration="10562000" />
       <workItem from="1563487299077" duration="3196000" />
-      <workItem from="1563490640327" duration="17164000" />
+      <workItem from="1563490640327" duration="17539000" />
     </task>
     <task id="LOCAL-00001" summary="-Create Django project&#10;-Created Application&#10;-Added templates&#10;-Bootstrap&#10;-CSS">
       <created>1562538114304</created>
@@ -508,7 +508,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161591000" />
+    <option name="totallyTimeSpent" value="161966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,25 +521,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1787" height="1046" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12836677" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12836677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.32914045" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" weight="0.32914045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946752" weight="0.32953367" />
-      <window_info anchor="bottom" id="manage.py@django_project" order="7" sideWeight="0.4978701" weight="0.32953367" />
+      <window_info anchor="bottom" id="manage.py@django_project" order="7" sideWeight="0.4978701" weight="0.32914045" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946752" weight="0.32953367" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319487" side_tool="true" weight="0.24559586" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946752" weight="0.32914045" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" weight="0.40985325" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4968051" visible="true" weight="0.40985325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
