@@ -13,6 +13,7 @@ boto3 = "*"
 django-storages = "*"
 gunicorn = "*"
 django-heroku = "*"
+nbconvert = "*"
 
 [requires]
 python_version = "3.7"
